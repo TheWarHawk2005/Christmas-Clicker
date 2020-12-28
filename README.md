@@ -5,7 +5,7 @@
 Make presents for all the little girls and boys of the world. 
 
 # How to play
-To start, download Christmas Clicker, or find online at thewarhawk2005.github.io/christmas-clicker. 
+To start, download Christmas Clicker, or find online at [thewarhawk2005.github.io/Christmas-Clicker](thewarhawk2005.github.io/Christmas-Clicker). 
 
 ## The Screen
 First, get aquainted with the layout of the game. There will be a Big Present in the center of the screen. Clicking this will give you a present. Below the present there is a counter that displays the number of presents you have. Below this is your present-per-second counter, and below _this_ is the shop. Buy the things in the shop to help you make more presents faster.
