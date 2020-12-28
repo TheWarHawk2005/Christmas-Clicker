@@ -16,13 +16,13 @@ if (shopType == "manual") {
 	var btn = document.createElement("BUTTON")
 	btn.innerHTML = '<img src="graphics/buildings/'+display+'" height="50" alt="'+name+'" onError="javascript:this.src=`graphics/error.png`"/>'
 	btn.style.backgroundColor = "black"
-	btn.title = name+'\n"'+tooltip+'"\nCost: '+cost+', Presents: '+gain
+	btn.title = name
 	btn.id = "buildings"
 	btn.onclick = function () {
 		buyItem(cost, gain)
 	}
 	btn.onmousemove = function () {
-	document.getElementById("shopInfo").innerHTML = name+'<br>"'+tooltip+'"<br>Cost: '+cost+', Presents: '+gain
+	document.getElementById("shopInfo").innerHTML = '<b>'+name+'</b><br><br>"'+tooltip+'"<br><br>Cost: '+cost+', Presents: '+gain
 	}
 	btn.onmouseout = function () {
 	document.getElementById("shopInfo").innerHTML = "Hover over a shop item to see it's stats."
@@ -35,20 +35,20 @@ else
 		var btn = document.createElement("BUTTON")
 		btn.innerHTML = '<img src="graphics/buildings/'+display+'" height="50" alt="'+name+'" onError="javascript:this.src=`graphics/error.png`"/>'
 		btn.style.backgroundColor = "black"
-		btn.title = name+'\n"'+tooltip+'"\nCost: '+cost+', Presents/Sec: '+gain
+		btn.title = name
 		btn.id = "buildings"
 		btn.onclick = function () {
 			buyAutoItem(cost, gain)
 		}
 	btn.onmousemove = function () {
-	document.getElementById("shopInfo").innerHTML = name+'<br>"'+tooltip+'"<br>Cost: '+cost+', Presents/Sec: '+gain
+	document.getElementById("shopInfo").innerHTML = '<b>'+name+'</b><br><br>"'+tooltip+'"<br><br>Cost: '+cost+', Presents/Sec: '+gain
 	}
 	btn.onmouseout = function () {
 	document.getElementById("shopInfo").innerHTML = "Hover over a shop item to see it's stats."
 	}
 	}
 }
-document.getElementById("shop").appendChild(btn);	
+document.getElementById("shop").appendChild(btn);
 }
 
 function buyItem(cost, gain) {
