@@ -34,3 +34,21 @@ addToShop(
 1000,
 5
 )
+
+addToShop(
+"timer",
+"Workshop",
+"Equipped with shelves, benches, and gear, there's no wonder why this has been a staple of present-makers for so long.",
+"workshop.png",
+5000,
+10
+)
+
+addToShop(
+"timer",
+"Elf Buddy",
+"Hooray, a little friend! Treat him well and he'll increase your PpS by 25.",
+"elf-buddy.png",
+100000,
+50
+)
