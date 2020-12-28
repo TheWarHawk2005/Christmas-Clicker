@@ -59,13 +59,18 @@ hr {
 width: 1000px;
 border-color: #03fc30;
 }
+
+#shopInfo {
+position: absolute;
+left: 0;
+}
 </style>
 </head>
 
 <body>
 
 
-<h5 id="version">[Pre-release] 0.0.1</p>
+<div id="splash"><p>Merry Christmas!</p></div>
 <h1>Christmas Clicker</h1>
 <p>Make presents to play. Build structures to get more presents faster.</p>
 <input height="200" type="image" src="graphics/present.png" id="present" onclick="increment(presentInc.click)" onError="javascript:this.src=`graphics/error.png`"/>
@@ -74,6 +79,8 @@ border-color: #03fc30;
 <div id="ppsCounter">PpS: 0</div>
 
 <hr>
+
+<p id="shopInfo">Hover over a shop item to see it's stats</p>
 
 <div id="shop"></div>
 
