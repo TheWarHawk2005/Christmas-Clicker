@@ -1,0 +1,86 @@
+<html>
+
+<head>
+<title>Christmas Clicker</title>
+
+<style>
+
+#present {
+box-shadow: 10px 10px 5px grey;
+margin: 10px;
+}
+
+#present {
+  animation-name: swing;
+  animation-duration: .5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes swing {
+0%   {transform:rotate(0deg);}
+25%  {transform:rotate(1deg);}
+50%  {transform:rotate(0deg);}
+75%  {transform:rotate(-1deg);}
+100% {transform:rotate(0deg);}
+}
+
+* {cursor: url("graphics/cursor-pointer.cur") 0 0, default}
+
+* {
+text-align: center;
+}
+
+#present:focus {
+outline-style: none;
+box-shadow: none;
+border-color: transparent;
+box-shadow: 10px 10px 5px grey;
+}
+
+#present:hover {
+height: 210;
+box-shadow: 10px 10px 5px grey;
+}
+
+#buildings {
+outline-style: groove;
+outline-color: red;
+outline-width: 5px;
+
+margin: 6px;
+}
+
+#buildings:hover {
+outline-style: groove;
+outline-color: #03fc30;
+}
+
+hr {
+width: 1000px;
+border-color: #03fc30;
+}
+</style>
+</head>
+
+<body>
+
+
+<h5 id="version">[Pre-release] 0.0.1</p>
+<h1>Christmas Clicker</h1>
+<p>Make presents to play. Build structures to get more presents faster.</p>
+<input height="200" type="image" src="graphics/present.png" id="present" onclick="increment(presentInc.click)" onError="javascript:this.src=`graphics/error.png`"/>
+
+<div id="counter"><p><b>Presents: 0</b></p></div>
+<div id="ppsCounter">PpS: 0</div>
+
+<hr>
+
+<div id="shop"></div>
+
+<script src="clicker.js"></script>
+<script src="buildings.js"></script>
+<script>update()</script>
+
+</body>
+
+</html>
