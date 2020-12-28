@@ -21,6 +21,12 @@ if (shopType == "manual") {
 	btn.onclick = function () {
 		buyItem(cost, gain)
 	}
+	btn.onmousemove = function () {
+	document.getElementById("shopInfo").innerHTML = name+'<br>"'+tooltip+'"<br>Cost: '+cost+', Presents: '+gain
+	}
+	btn.onmouseout = function () {
+	document.getElementById("shopInfo").innerHTML = "Hover over a shop item to see it's stats."
+	}
 }
 //Else, create a time-based item.
 else
@@ -34,6 +40,12 @@ else
 		btn.onclick = function () {
 			buyAutoItem(cost, gain)
 		}
+	btn.onmousemove = function () {
+	document.getElementById("shopInfo").innerHTML = name+'<br>"'+tooltip+'"<br>Cost: '+cost+', Presents/Sec: '+gain
+	}
+	btn.onmouseout = function () {
+	document.getElementById("shopInfo").innerHTML = "Hover over a shop item to see it's stats."
+	}
 	}
 }
 document.getElementById("shop").appendChild(btn);	
