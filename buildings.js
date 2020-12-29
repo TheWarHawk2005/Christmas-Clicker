@@ -1,18 +1,20 @@
+//Type, Name, Info, DisplayImage, Price, PPS/Click Increment
+
 
 addToShop(
-"manual", //type
-"Hammer", //name
-"You gotta start somewhere!", //tooltip
-"hammer.png", //image ("display")
-100, //cost
-1 //gain
+"manual",
+"Hammer",
+"You gotta start somewhere!",
+"hammer.png",
+100,
+1
 )
 
 addToShop(
 "timer",
 "Workbench",
 "Automation.",
-"workbench.png", //image ("display")
+"workbench.png",
 500,
 1
 )
@@ -21,7 +23,7 @@ addToShop(
 "timer",
 "Igloo",
 "Shelter!",
-"igloo.png", //image ("display")
+"igloo.png",
 1000,
 5
 )
@@ -40,15 +42,15 @@ addToShop(
 "Workshop",
 "Equipped with shelves, benches, and gear, there's no wonder why this has been a staple of present-makers for so long.",
 "workshop.png",
-5000,
+10000,
 10
 )
 
 addToShop(
 "timer",
 "Elf Buddy",
-"Hooray, a little friend! Treat him well and he'll increase your PpS by 25.",
+"Hooray, a little friend! Treat him well and he'll increase your PPS by 100.",
 "elf-buddy.png",
 100000,
-50
+100
 )

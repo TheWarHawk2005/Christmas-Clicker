@@ -1,76 +1,72 @@
 <html>
 
 <head>
-<title>Christmas Clicker</title>
+    <title>Christmas Clicker</title>
 
-<style>
+    <style>
 
-#present {
-box-shadow: 10px 10px 5px grey;
-margin: 10px;
-}
+        #present {
+            box-shadow: 10px 10px 5px grey;
+            margin: 10px;
+        }
 
-#present {
-  animation-name: swing;
-  animation-duration: .5s;
-  animation-iteration-count: infinite;
-}
+        #present {
+            animation-name: swing;
+            animation-duration: .5s;
+            animation-iteration-count: infinite;
+        }
 
-@keyframes swing {
-0%   {transform:rotate(0deg);}
-25%  {transform:rotate(1deg);}
-50%  {transform:rotate(0deg);}
-75%  {transform:rotate(-1deg);}
-100% {transform:rotate(0deg);}
-}
+        @keyframes swing {
+            0%   {transform:rotate(0deg);}
+            25%  {transform:rotate(1deg);}
+            50%  {transform:rotate(0deg);}
+            75%  {transform:rotate(-1deg);}
+            100% {transform:rotate(0deg);}
+        }
 
-* {cursor: url("graphics/cursor-pointer.cur") 0 0, default}
+        * {cursor: url("graphics/cursor-pointer.cur") 0 0, default}
 
-* {
-text-align: center;
-}
+        * {
+            text-align: center;
+        }
 
-#present:focus {
-outline-style: none;
-box-shadow: none;
-border-color: transparent;
-box-shadow: 10px 10px 5px grey;
-}
+        #present:focus {
+            outline-style: none;
+            border-color: transparent;
+            box-shadow: 10px 10px 5px grey;
+        }
 
-#present:hover {
-height: 210;
-box-shadow: 10px 10px 5px grey;
-}
+        #present:hover {
+            height: 210px;
+            box-shadow: 10px 10px 5px grey;
+        }
 
-#buildings {
-outline-style: groove;
-outline-color: red;
-outline-width: 5px;
+        #buildings {
+            outline: red groove 5px;
+            margin: 6px;
+        }
 
-margin: 6px;
-}
+        #buildings:hover {
+            outline-style: groove;
+            outline-color: #03fc30;
+        }
 
-#buildings:hover {
-outline-style: groove;
-outline-color: #03fc30;
-}
+        hr {
+            width: 1000px;
+            border-color: #03fc30;
+        }
 
-hr {
-width: 1000px;
-border-color: #03fc30;
-}
+        #shopInfo {
+            position: absolute;
+            left: 0;
+            width: 200px;
+        }
 
-#shopInfo {
-position: absolute;
-left: 0;
-width: 200;
-}
-
-#shop {
-width: 400;
-display: inline-block;
-}
-</style>
+        #shop {
+            width: 400px;
+            display: inline-block;
+        }
+    </style>
 </head>
 
 <body>
@@ -79,7 +75,7 @@ display: inline-block;
 <div id="splash"><p>Merry Christmas!</p></div>
 <h1>Christmas Clicker</h1>
 <p>Make presents to play. Build structures to get more presents faster.</p>
-<input height="200" type="image" src="graphics/present.png" id="present" onclick="increment(presentInc.click)" onError="javascript:this.src=`graphics/error.png`"/>
+<input height="200" type="image" src="graphics/present.png" id="present" onclick="increment(presentsPer.click);" alt="javascript:this.src=`graphics/error.png`"/>
 
 <div id="counter"><p><b>Presents: 0</b></p></div>
 <div id="ppsCounter">PpS: 0</div>
