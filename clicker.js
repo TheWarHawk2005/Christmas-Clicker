@@ -8,6 +8,7 @@ var original = presentsPer.sec;
 
 console.log("Initiated")
 console.log("-==*  Cheating, are we? GO AWAY  *==-")
+console.log("xD")
 
 incrementSecs()
 
@@ -76,7 +77,7 @@ function increment(increment) {
 	setTimeout(update, 1000)
 }
 
-function ClicksPerSecCounter() {
+/*function ClicksPerSecCounter() {
 	let numClicks = 0, secondsSpent = 0;
 	let start;
 	let old = document.getElementById('present').onclick;
@@ -110,7 +111,7 @@ function ClicksPerSecCounter() {
 }
 
 const cpsCounter = new ClicksPerSecCounter();
-
+*/
 
 function incrementSecs() {
 	setTimeout(incrementSecs, 1000);
