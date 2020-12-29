@@ -1,10 +1,12 @@
-# DEVELOPER GUIDELINES
+# DEVELOPER NOTES
 ### Read before updating repo.
 Make sure that you download the latest repo version before updating the files. 
 
 #### PpS:
 The PpS is there to display how many Presents you get per second without having to click. I agree we need a Presents per Click display, but it's too confusing to have our current setup. If you could revert it, PerryPlaysMC, that would be great. I'll work on a PpC counter/display.
 
+
+----------------------------------------------
 
 # Christmas Clicker
  *We need presents! Are you up for the task?*
